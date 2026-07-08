@@ -28,11 +28,11 @@
     margin: 0 0 28px;
   }
   .wrap {
-    max-width: 980px;
+    max-width: 1040px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 28px;
+    grid-template-columns: 380px 1fr;
+    gap: 32px;
   }
   @media (max-width: 760px) {
     .wrap { grid-template-columns: 1fr; }
@@ -116,8 +116,9 @@
     line-height: 1.6;
     color: #55504a;
   }
-  .steps b { color: var(--ink); display: block; margin-top: 16px; }
-  .steps b:first-child { margin-top: 0; }
+  .steps b { color: var(--ink); }
+  .steps-header { display: block; margin-top: 16px; }
+  .steps-header:first-child { margin-top: 0; }
   .steps ol { padding-left: 18px; margin: 8px 0 0; }
 </style>
 </head>
@@ -148,7 +149,7 @@
     <div class="hint">Paste the public link to your org's logo (hosted on your website, Google Drive with public sharing, or an image host). It must be a direct link ending in an image, not a page link.</div>
 
     <div class="steps">
-      <b>How to install this in Gmail:</b>
+      <b class="steps-header">How to install this in Gmail:</b>
       <ol>
         <li>Fill in your name, title, phone, and email above (the logo and website are already filled in for you — no need to touch those).</li>
         <li>Click the <b>"Copy signature"</b> button below. You'll see a message confirming it copied.</li>
@@ -160,13 +161,13 @@
         <li>Scroll all the way down and click the blue <b>"Save Changes"</b> button. If you skip this last step, nothing will save!</li>
         <li>Test it: click <b>Compose</b> to start a new email and confirm your signature shows up automatically.</li>
       </ol>
-      <b>Troubleshooting:</b>
+      <b class="steps-header">Troubleshooting:</b>
       <ol>
         <li>If the logo doesn't appear: give it a few seconds and refresh the compose window — it sometimes needs a moment to load the first time.</li>
         <li>If pasting shows plain text with no logo or formatting: make sure you clicked inside the signature box first, then use Ctrl+V / Cmd+V (not "Paste and match style," which strips formatting).</li>
         <li>If you're on a Mac and Cmd+V doesn't paste the formatted version, try right-clicking inside the box and choosing "Paste."</li>
       </ol>
-      <b>Using Outlook instead?</b>
+      <b class="steps-header">Using Outlook instead?</b>
       <ol>
         <li>Go to Settings → Mail → Compose and reply → Signature, then paste into the box the same way.</li>
       </ol>
